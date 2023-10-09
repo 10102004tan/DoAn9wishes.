@@ -1,0 +1,240 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit; }
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%; }
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none; }
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0; }
+
+body {
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  font-family: "Lato", sans-serif; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+/* CSS HEADER  */
+/* css header top */
+.header__top {
+  background-color: #000;
+  color: #fff; }
+
+.header__top div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; }
+
+.header__top div p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold; }
+
+.header-list__social {
+  display: flex;
+  align-items: center;
+  margin-left: -10px; }
+
+.header-item__social {
+  font-size: 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold; }
+
+/* css header nav */
+nav {
+  padding: 5px 0; }
+
+nav div {
+  display: flex;
+  align-items: center; }
+
+.nav__Logo {
+  width: 150px; }
+
+.nav__between {
+  margin-left: 5rem;
+  display: flex; }
+
+.nav__item {
+  list-style: none;
+  font-size: 1rem;
+  margin-right: 15px;
+  font-weight: bold; }
+
+.nav__item a {
+  text-decoration: none;
+  color: #000; }
+
+.nav__item:not(:first-of-type) a {
+  color: #535050;
+  /* background-color: aqua; */ }
+
+.nav__item a:hover {
+  color: #000; }
+
+.nav__right {
+  position: relative;
+  font-size: 1rem;
+  font-weight: bold;
+  /* top right botoom left */
+  margin: 0 0 0 auto;
+  color: #535050; }
+
+.cart {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000;
+  position: relative;
+  margin-left: 10px;
+  z-index: 1;
+  transition: all 0.25s linear; }
+
+.cart:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 99px;
+  border: 2px solid #000;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: all 0.25s linear; }
+
+.cart__number {
+  font-weight: 700;
+  /* display: block; */
+  width: 100%;
+  text-align: center; }
+
+.cart__notify {
+  position: absolute;
+  padding: 20px 20px;
+  width: 300px;
+  border: 1px solid #ada8a8;
+  box-shadow: 0 0 11px 2px #ada8a8;
+  top: 100%;
+  right: 0;
+  margin-top: 20px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear;
+  color: #ada8a8;
+  font-weight: normal; }
+
+.cart__notify:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg) translate(-74%, 0);
+  position: absolute;
+  border: 1px solid #ada8a8;
+  background-color: #fff;
+  border-bottom: none;
+  border-right: none;
+  top: 0;
+  left: 70%;
+  z-index: -1; }
+
+.nav__right:hover .text {
+  color: #000; }
+.nav__right:hover .nav__price {
+  color: #000; }
+.nav__right:hover .cart {
+  background-color: #000;
+  color: #fff; }
+.nav__right:hover .cart:before {
+  top: -5%; }
+.nav__right:hover .cart__notify {
+  opacity: 1;
+  visibility: inherit; }
+
+.nav__item {
+  position: relative; }
+
+.find {
+  position: absolute;
+  top: 100%;
+  padding: 20px;
+  border: 1px solid #ada8a8;
+  left: 0;
+  margin-left: -27px;
+  margin-top: 16px;
+  box-shadow: 0 0 11px 2px #ada8a8;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s linear; }
+  .find-box {
+    display: flex;
+    align-items: normal;
+    border: 1px solid #ada8a8; }
+    .find-box:before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      transform: rotate(45deg) translate(-74%, 0);
+      position: absolute;
+      border: 1px solid #ada8a8;
+      background-color: #fff;
+      border-bottom: none;
+      border-right: none;
+      top: 0;
+      left: 12%;
+      transition: all 0.25s linear; }
+    .find-box input {
+      border: none;
+      padding: 5px 10px;
+      font-weight: normal; }
+    .find-box ::-webkit-input-placeholder {
+      font-weight: normal; }
+    .find-box ::-moz-input-placeholder {
+      font-weight: normal; }
+
+.icon-input__find {
+  padding: 10px;
+  background-color: #000;
+  color: #fff; }
+
+.nav__item:last-child:hover .find {
+  opacity: 1;
+  visibility: inherit; }
+
+.banner {
+  position: relative;
+  width: 100%;
+  z-index: -1; }
+  .banner__image img {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh; }
+
+/*# sourceMappingURL=style.css.map */
